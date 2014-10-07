@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2199593E19E4073E0058399E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199593D19E4073E0058399E /* main.m */; };
+		2199594119E4073E0058399E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199594019E4073E0058399E /* AppDelegate.m */; };
+		2199594319E4073E0058399E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2199594219E4073E0058399E /* Images.xcassets */; };
+		2199594619E4073E0058399E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2199594419E4073E0058399E /* MainMenu.xib */; };
+		2199595219E4073F0058399E /* KRImageProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199595119E4073F0058399E /* KRImageProcessTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2199594C19E4073F0058399E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2199593019E4073E0058399E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2199593719E4073E0058399E;
+			remoteInfo = KRImageProcess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2199593819E4073E0058399E /* KRImageProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRImageProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2199593C19E4073E0058399E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2199593D19E4073E0058399E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2199593F19E4073E0058399E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2199594019E4073E0058399E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2199594219E4073E0058399E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2199594519E4073E0058399E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2199594B19E4073F0058399E /* KRImageProcessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRImageProcessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2199595019E4073F0058399E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2199595119E4073F0058399E /* KRImageProcessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRImageProcessTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2199593519E4073E0058399E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2199594819E4073F0058399E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2199592F19E4073E0058399E = {
+			isa = PBXGroup;
+			children = (
+				2199593A19E4073E0058399E /* KRImageProcess */,
+				2199594E19E4073F0058399E /* KRImageProcessTests */,
+				2199593919E4073E0058399E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2199593919E4073E0058399E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2199593819E4073E0058399E /* KRImageProcess.app */,
+				2199594B19E4073F0058399E /* KRImageProcessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2199593A19E4073E0058399E /* KRImageProcess */ = {
+			isa = PBXGroup;
+			children = (
+				2199593F19E4073E0058399E /* AppDelegate.h */,
+				2199594019E4073E0058399E /* AppDelegate.m */,
+				2199594219E4073E0058399E /* Images.xcassets */,
+				2199594419E4073E0058399E /* MainMenu.xib */,
+				2199593B19E4073E0058399E /* Supporting Files */,
+			);
+			path = KRImageProcess;
+			sourceTree = "<group>";
+		};
+		2199593B19E4073E0058399E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2199593C19E4073E0058399E /* Info.plist */,
+				2199593D19E4073E0058399E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2199594E19E4073F0058399E /* KRImageProcessTests */ = {
+			isa = PBXGroup;
+			children = (
+				2199595119E4073F0058399E /* KRImageProcessTests.m */,
+				2199594F19E4073F0058399E /* Supporting Files */,
+			);
+			path = KRImageProcessTests;
+			sourceTree = "<group>";
+		};
+		2199594F19E4073F0058399E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2199595019E4073F0058399E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2199593719E4073E0058399E /* KRImageProcess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2199595519E4073F0058399E /* Build configuration list for PBXNativeTarget "KRImageProcess" */;
+			buildPhases = (
+				2199593419E4073E0058399E /* Sources */,
+				2199593519E4073E0058399E /* Frameworks */,
+				2199593619E4073E0058399E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRImageProcess;
+			productName = KRImageProcess;
+			productReference = 2199593819E4073E0058399E /* KRImageProcess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2199594A19E4073F0058399E /* KRImageProcessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2199595819E4073F0058399E /* Build configuration list for PBXNativeTarget "KRImageProcessTests" */;
+			buildPhases = (
+				2199594719E4073F0058399E /* Sources */,
+				2199594819E4073F0058399E /* Frameworks */,
+				2199594919E4073F0058399E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2199594D19E4073F0058399E /* PBXTargetDependency */,
+			);
+			name = KRImageProcessTests;
+			productName = KRImageProcessTests;
+			productReference = 2199594B19E4073F0058399E /* KRImageProcessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2199593019E4073E0058399E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Bai-Kai-Ren";
+				TargetAttributes = {
+					2199593719E4073E0058399E = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					2199594A19E4073F0058399E = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 2199593719E4073E0058399E;
+					};
+				};
+			};
+			buildConfigurationList = 2199593319E4073E0058399E /* Build configuration list for PBXProject "KRImageProcess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2199592F19E4073E0058399E;
+			productRefGroup = 2199593919E4073E0058399E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2199593719E4073E0058399E /* KRImageProcess */,
+				2199594A19E4073F0058399E /* KRImageProcessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2199593619E4073E0058399E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2199594319E4073E0058399E /* Images.xcassets in Resources */,
+				2199594619E4073E0058399E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2199594919E4073F0058399E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2199593419E4073E0058399E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2199594119E4073E0058399E /* AppDelegate.m in Sources */,
+				2199593E19E4073E0058399E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2199594719E4073F0058399E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2199595219E4073F0058399E /* KRImageProcessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2199594D19E4073F0058399E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2199593719E4073E0058399E /* KRImageProcess */;
+			targetProxy = 2199594C19E4073F0058399E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2199594419E4073E0058399E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2199594519E4073E0058399E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2199595319E4073F0058399E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2199595419E4073F0058399E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2199595619E4073F0058399E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KRImageProcess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2199595719E4073F0058399E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KRImageProcess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2199595919E4073F0058399E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KRImageProcessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRImageProcess.app/Contents/MacOS/KRImageProcess";
+			};
+			name = Debug;
+		};
+		2199595A19E4073F0058399E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KRImageProcessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRImageProcess.app/Contents/MacOS/KRImageProcess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2199593319E4073E0058399E /* Build configuration list for PBXProject "KRImageProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2199595319E4073F0058399E /* Debug */,
+				2199595419E4073F0058399E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2199595519E4073F0058399E /* Build configuration list for PBXNativeTarget "KRImageProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2199595619E4073F0058399E /* Debug */,
+				2199595719E4073F0058399E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2199595819E4073F0058399E /* Build configuration list for PBXNativeTarget "KRImageProcessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2199595919E4073F0058399E /* Debug */,
+				2199595A19E4073F0058399E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2199593019E4073E0058399E /* Project object */;
+}
