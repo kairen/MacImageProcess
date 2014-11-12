@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainController">
+            <connections>
+                <outlet property="heightField" destination="dxG-De-f4J" id="16y-T4-RDO"/>
+                <outlet property="popUpButton" destination="FzM-fv-KUB" id="TTd-pm-4Lq"/>
+                <outlet property="processImage" destination="5bd-D6-kPa" id="j5u-uQ-hba"/>
+                <outlet property="sourceImage" destination="fiJ-t3-aeR" id="QgX-T7-5Af"/>
+                <outlet property="widthField" destination="XIc-Ml-0Mm" id="fKe-Fj-Pua"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Image Process" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="587" height="385"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="587" height="385"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-De-f4J">
+                        <rect key="frame" x="62" y="46" width="142" height="30"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="256" drawsBackground="YES" id="70W-yu-Au5">
+                            <font key="font" metaFont="system" size="17"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-Ml-0Mm">
+                        <rect key="frame" x="62" y="86" width="142" height="30"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="256" drawsBackground="YES" id="X9Q-eA-lyc">
+                            <font key="font" metaFont="system" size="17"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiJ-t3-aeR">
+                        <rect key="frame" x="12" y="121" width="256" height="256"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="t2E-Mv-g4v"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-D6-kPa">
+                        <rect key="frame" x="320" y="121" width="256" height="256"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="iVd-Jb-C7f"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-d5-Ddh">
+                        <rect key="frame" x="15" y="93" width="43" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="寬度：" id="E7F-Ur-fKR">
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTo-fB-GmG">
+                        <rect key="frame" x="15" y="55" width="43" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="高度：" id="xt1-fa-p5o">
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FzM-fv-KUB">
+                        <rect key="frame" x="60" y="14" width="147" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="c2c-g5-alf">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="vWC-Ys-pRu"/>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="selectImage:" target="-2" id="JBZ-kv-ObY"/>
+                        </connections>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRQ-DS-2ay">
+                        <rect key="frame" x="267" y="76" width="79" height="32"/>
+                        <buttonCell key="cell" type="push" title="縮放" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="HgH-h3-Kef">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="resizeAction:" target="-2" id="Nfh-wC-0Fn"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-rA-OkB">
+                        <rect key="frame" x="267" y="42" width="79" height="32"/>
+                        <buttonCell key="cell" type="push" title="灰階" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OSR-JX-oXj">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="grayValueAction:" target="-2" id="8Zr-Vp-uL7"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8F-dA-byV">
+                        <rect key="frame" x="348" y="43" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="旋轉" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VcA-jr-Twu">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="rotationAction:" target="-2" id="pEG-07-khi"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amH-B7-Puc">
+                        <rect key="frame" x="269" y="10" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="低通" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RhZ-Cs-hMD">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="lowFilterAction:" target="-2" id="3vk-id-XDT"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTA-Ye-hh5">
+                        <rect key="frame" x="425" y="75" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="中值" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AUg-KI-ZaV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="medianFilterAction:" target="-2" id="XhZ-EU-A7d"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2Z-LD-oaR">
+                        <rect key="frame" x="502" y="75" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="高斯" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vbX-Qi-FbE">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="gaussianFilterAction:" target="-2" id="cos-oX-wc9"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vp0-ng-fSm">
+                        <rect key="frame" x="348" y="76" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="二值化" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cj1-ge-FUa">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="twoValueAction:" target="-2" id="e60-ZL-sqW"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-ba-BPd">
+                        <rect key="frame" x="502" y="45" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="YCrCb" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AB8-tr-XR0">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cvImageBGRtoYCrCb:" target="-2" id="Rfe-Hw-UOy"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIe-yl-31l">
+                        <rect key="frame" x="502" y="9" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="Face" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s7K-Aj-xyd">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="detectionSkinColor:" target="-2" id="BCq-6Z-V2f"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PoG-9s-VdH">
+                        <rect key="frame" x="425" y="40" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="霍夫" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9Vd-hh-fEc">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="houghTransformAction:" target="-2" id="m4p-Zd-tK7"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="78.5" y="176.5"/>
+        </window>
+    </objects>
+</document>
