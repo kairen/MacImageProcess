@@ -16,17 +16,17 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="KRImageProcess" id="1Xt-HY-uBw">
+                <menuItem title="ImageProcess" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="KRImageProcess" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="ImageProcess" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About KRImageProcess" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="About ImageProcess" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="aboutAction:" target="-1" id="sg8-d4-pEs"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit KRImageProcess" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit ImageProcess" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>

@@ -8,10 +8,12 @@
 
 #import "AppDelegate.h"
 #import "MainController.h"
+#import "TransformController.h"
 
 @interface AppDelegate ()
 
 @property(nonatomic, strong) MainController *mainController;
+@property(nonatomic, strong) TransformController *transformController;
 @end
 
 @implementation AppDelegate
@@ -19,6 +21,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.mainController = [[MainController alloc]initWithWindowNibName:@"MainController"];
     [self.mainController.window makeKeyAndOrderFront:nil];
+
+    self.transformController = [[TransformController alloc]initWithWindowNibName:@"TransformController"];
+    [self.transformController.window makeKeyAndOrderFront:nil];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TransformController">
+            <connections>
+                <outlet property="effectImage" destination="3Id-7b-8G5" id="z0u-eu-YWR"/>
+                <outlet property="popUpButton" destination="71W-nt-5k6" id="MEG-AB-yPM"/>
+                <outlet property="processImage" destination="YAk-MB-gWv" id="7Vd-la-efy"/>
+                <outlet property="sourceImage" destination="OIw-TY-dfy" id="0zt-9t-F06"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="作業五" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="455" height="428"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="428"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIw-TY-dfy">
+                        <rect key="frame" x="17" y="211" width="200" height="200"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="photo" id="BRk-8R-t5F"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Id-7b-8G5">
+                        <rect key="frame" x="238" y="211" width="200" height="200"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="photo" id="XE6-Ej-0yV"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAk-MB-gWv">
+                        <rect key="frame" x="238" y="9" width="200" height="200"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="photo" id="PLa-0T-ifv"/>
+                    </imageView>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="71W-nt-5k6">
+                        <rect key="frame" x="44" y="108" width="147" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="m5u-HT-bvZ">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="DLr-kb-ig1"/>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="selectImage:" target="-2" id="wWV-Dk-RAH"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="409"/>
+        </window>
+    </objects>
+</document>

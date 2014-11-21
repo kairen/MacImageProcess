@@ -30,7 +30,7 @@ using namespace cv;
 }
 
 -(IBAction) aboutAction:(id)sender {
-    NSAlert *alert = [NSAlert alertWithMessageText:@"I'm Bigger" defaultButton:@"Close" alternateButton:nil otherButton:nil informativeTextWithFormat:@"KaiRen\nE-mail:s1499k005@gmail.com\nLab:2801-1"];
+    NSAlert *alert = [NSAlert alertWithMessageText:@"影像處理作業" defaultButton:@"關閉" alternateButton:nil otherButton:nil informativeTextWithFormat:@"作業版本 1.0.0 \nMade in Lab 2801-1"];
     [alert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 

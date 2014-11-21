@@ -8,9 +8,9 @@
 
 #import "CVProcess.h"
 
-int avg_cb = 120;//YCbCr顏色空間膚色cb的平均值
-int avg_cr = 155;//YCbCr顏色空間膚色cr的平均值
-int skinRange = 22;//YCbCr顏色空間膚色的範圍
+int avg_cb = 112;//YCbCr顏色空間膚色cb的平均值
+int avg_cr = 120;//YCbCr顏色空間膚色cr的平均值
+int skinRange = 23;//YCbCr顏色空間膚色的範圍
 
 @implementation CVProcess
 
