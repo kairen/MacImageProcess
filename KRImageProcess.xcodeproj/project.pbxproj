@@ -78,7 +78,7 @@
 		2126941B1A1F8B75003760D5 /* image_03_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694111A1F8B75003760D5 /* image_03_one.jpg */; };
 		2126941C1A1F8B75003760D5 /* image_03_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694121A1F8B75003760D5 /* image_03_two.jpg */; };
 		2126941D1A1F8B75003760D5 /* image_04_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694131A1F8B75003760D5 /* image_04_one.jpg */; };
-		2126941E1A1F8B75003760D5 /* image_04_two.jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694141A1F8B75003760D5 /* image_04_two.jpg.jpg */; };
+		2126941E1A1F8B75003760D5 /* image_04_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694141A1F8B75003760D5 /* image_04_two.jpg */; };
 		2126941F1A1F8B75003760D5 /* image_05_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694151A1F8B75003760D5 /* image_05_one.jpg */; };
 		212694201A1F8B75003760D5 /* image_05_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694161A1F8B75003760D5 /* image_05_two.jpg */; };
 		212694251A1F92B7003760D5 /* TransformController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 212694231A1F92B7003760D5 /* TransformController.mm */; };
@@ -87,20 +87,9 @@
 		2199594119E4073E0058399E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199594019E4073E0058399E /* AppDelegate.m */; };
 		2199594319E4073E0058399E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2199594219E4073E0058399E /* Images.xcassets */; };
 		2199594619E4073E0058399E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2199594419E4073E0058399E /* MainMenu.xib */; };
-		2199595219E4073F0058399E /* KRImageProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199595119E4073F0058399E /* KRImageProcessTests.m */; };
 		2199596F19E40F2A0058399E /* MainController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2199596D19E40F2A0058399E /* MainController.mm */; };
 		2199597019E40F2A0058399E /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2199596E19E40F2A0058399E /* MainController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2199594C19E4073F0058399E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2199593019E4073E0058399E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2199593719E4073E0058399E;
-			remoteInfo = KRImageProcess;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2119B6101A12379000659717 /* NSBitmapImageRep+Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBitmapImageRep+Process.h"; sourceTree = "<group>"; };
@@ -177,7 +166,7 @@
 		212694111A1F8B75003760D5 /* image_03_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_03_one.jpg; sourceTree = "<group>"; };
 		212694121A1F8B75003760D5 /* image_03_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_03_two.jpg; sourceTree = "<group>"; };
 		212694131A1F8B75003760D5 /* image_04_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_04_one.jpg; sourceTree = "<group>"; };
-		212694141A1F8B75003760D5 /* image_04_two.jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_04_two.jpg.jpg; sourceTree = "<group>"; };
+		212694141A1F8B75003760D5 /* image_04_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_04_two.jpg; sourceTree = "<group>"; };
 		212694151A1F8B75003760D5 /* image_05_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_05_one.jpg; sourceTree = "<group>"; };
 		212694161A1F8B75003760D5 /* image_05_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_05_two.jpg; sourceTree = "<group>"; };
 		212694221A1F92B7003760D5 /* TransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformController.h; sourceTree = "<group>"; };
@@ -190,9 +179,6 @@
 		2199594019E4073E0058399E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2199594219E4073E0058399E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2199594519E4073E0058399E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2199594B19E4073F0058399E /* KRImageProcessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRImageProcessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2199595019E4073F0058399E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2199595119E4073F0058399E /* KRImageProcessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRImageProcessTests.m; sourceTree = "<group>"; };
 		2199596C19E40F2A0058399E /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		2199596D19E40F2A0058399E /* MainController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainController.mm; sourceTree = "<group>"; };
 		2199596E19E40F2A0058399E /* MainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
@@ -258,13 +244,6 @@
 				2119BC901A125E4700659717 /* libopencv_core.2.4.9.dylib in Frameworks */,
 				2119BC971A125E4700659717 /* libopencv_flann.2.4.9.dylib in Frameworks */,
 				2119BC9B1A125E4700659717 /* libopencv_highgui.2.4.9.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2199594819E4073F0058399E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +336,7 @@
 				212694111A1F8B75003760D5 /* image_03_one.jpg */,
 				212694121A1F8B75003760D5 /* image_03_two.jpg */,
 				212694131A1F8B75003760D5 /* image_04_one.jpg */,
-				212694141A1F8B75003760D5 /* image_04_two.jpg.jpg */,
+				212694141A1F8B75003760D5 /* image_04_two.jpg */,
 				212694151A1F8B75003760D5 /* image_05_one.jpg */,
 				212694161A1F8B75003760D5 /* image_05_two.jpg */,
 			);
@@ -382,7 +361,6 @@
 			children = (
 				2119BBA11A1256FC00659717 /* Frameworks */,
 				2199593A19E4073E0058399E /* KRImageProcess */,
-				2199594E19E4073F0058399E /* KRImageProcessTests */,
 				2199593919E4073E0058399E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -391,7 +369,6 @@
 			isa = PBXGroup;
 			children = (
 				2199593819E4073E0058399E /* KRImageProcess.app */,
-				2199594B19E4073F0058399E /* KRImageProcessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -416,23 +393,6 @@
 				2119BCCC1A12770700659717 /* Resouce */,
 				2199593C19E4073E0058399E /* Info.plist */,
 				2199593D19E4073E0058399E /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2199594E19E4073F0058399E /* KRImageProcessTests */ = {
-			isa = PBXGroup;
-			children = (
-				2199595119E4073F0058399E /* KRImageProcessTests.m */,
-				2199594F19E4073F0058399E /* Supporting Files */,
-			);
-			path = KRImageProcessTests;
-			sourceTree = "<group>";
-		};
-		2199594F19E4073F0058399E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2199595019E4073F0058399E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -470,24 +430,6 @@
 			productReference = 2199593819E4073E0058399E /* KRImageProcess.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2199594A19E4073F0058399E /* KRImageProcessTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2199595819E4073F0058399E /* Build configuration list for PBXNativeTarget "KRImageProcessTests" */;
-			buildPhases = (
-				2199594719E4073F0058399E /* Sources */,
-				2199594819E4073F0058399E /* Frameworks */,
-				2199594919E4073F0058399E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2199594D19E4073F0058399E /* PBXTargetDependency */,
-			);
-			name = KRImageProcessTests;
-			productName = KRImageProcessTests;
-			productReference = 2199594B19E4073F0058399E /* KRImageProcessTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -499,10 +441,6 @@
 				TargetAttributes = {
 					2199593719E4073E0058399E = {
 						CreatedOnToolsVersion = 6.0.1;
-					};
-					2199594A19E4073F0058399E = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 2199593719E4073E0058399E;
 					};
 				};
 			};
@@ -520,7 +458,6 @@
 			projectRoot = "";
 			targets = (
 				2199593719E4073E0058399E /* KRImageProcess */,
-				2199594A19E4073F0058399E /* KRImageProcessTests */,
 			);
 		};
 /* End PBXProject section */
@@ -548,15 +485,8 @@
 				2199594319E4073E0058399E /* Images.xcassets in Resources */,
 				212694261A1F92B7003760D5 /* TransformController.xib in Resources */,
 				2199594619E4073E0058399E /* MainMenu.xib in Resources */,
-				2126941E1A1F8B75003760D5 /* image_04_two.jpg.jpg in Resources */,
+				2126941E1A1F8B75003760D5 /* image_04_two.jpg in Resources */,
 				212694171A1F8B75003760D5 /* image_01_one.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2199594919E4073F0058399E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,23 +507,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2199594719E4073F0058399E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2199595219E4073F0058399E /* KRImageProcessTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2199594D19E4073F0058399E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2199593719E4073E0058399E /* KRImageProcess */;
-			targetProxy = 2199594C19E4073F0058399E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2199594419E4073E0058399E /* MainMenu.xib */ = {
@@ -731,42 +645,6 @@
 			};
 			name = Release;
 		};
-		2199595919E4073F0058399E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KRImageProcessTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRImageProcess.app/Contents/MacOS/KRImageProcess";
-			};
-			name = Debug;
-		};
-		2199595A19E4073F0058399E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KRImageProcessTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRImageProcess.app/Contents/MacOS/KRImageProcess";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,15 +662,6 @@
 			buildConfigurations = (
 				2199595619E4073F0058399E /* Debug */,
 				2199595719E4073F0058399E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2199595819E4073F0058399E /* Build configuration list for PBXNativeTarget "KRImageProcessTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2199595919E4073F0058399E /* Debug */,
-				2199595A19E4073F0058399E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
