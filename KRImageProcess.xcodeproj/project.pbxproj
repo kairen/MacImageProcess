@@ -65,9 +65,7 @@
 		2119BCBF1A125E4800659717 /* libopencv_videostab.2.4.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2119BC881A125E4700659717 /* libopencv_videostab.2.4.9.dylib */; };
 		2119BCC81A1266E000659717 /* CVProcess.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2119BCC71A1266E000659717 /* CVProcess.mm */; };
 		2119BCCB1A126AEA00659717 /* NSImage+CVImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2119BCCA1A126AEA00659717 /* NSImage+CVImage.mm */; };
-		2119BCD11A12770700659717 /* bEyxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119BCCD1A12770700659717 /* bEyxy.png */; };
 		2119BCD21A12770700659717 /* Butterfly_pepper.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119BCCE1A12770700659717 /* Butterfly_pepper.png */; };
-		2119BCD31A12770700659717 /* lena_noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119BCCF1A12770700659717 /* lena_noise.png */; };
 		2119BCD41A12770700659717 /* lena_std.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119BCD01A12770700659717 /* lena_std.png */; };
 		2119BCD61A127E4F00659717 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119BCD51A127E4F00659717 /* face.png */; };
 		2119BCD81A12854900659717 /* houghTrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119BCD71A12854900659717 /* houghTrans.png */; };
@@ -83,6 +81,7 @@
 		212694201A1F8B75003760D5 /* image_05_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 212694161A1F8B75003760D5 /* image_05_two.jpg */; };
 		212694251A1F92B7003760D5 /* TransformController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 212694231A1F92B7003760D5 /* TransformController.mm */; };
 		212694261A1F92B7003760D5 /* TransformController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212694241A1F92B7003760D5 /* TransformController.xib */; };
+		2175408C1A20E832004D7283 /* lena_bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2175408B1A20E832004D7283 /* lena_bad.png */; };
 		2199593E19E4073E0058399E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199593D19E4073E0058399E /* main.m */; };
 		2199594119E4073E0058399E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2199594019E4073E0058399E /* AppDelegate.m */; };
 		2199594319E4073E0058399E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2199594219E4073E0058399E /* Images.xcassets */; };
@@ -153,9 +152,7 @@
 		2119BCC71A1266E000659717 /* CVProcess.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVProcess.mm; sourceTree = "<group>"; };
 		2119BCC91A126AEA00659717 /* NSImage+CVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+CVImage.h"; sourceTree = "<group>"; };
 		2119BCCA1A126AEA00659717 /* NSImage+CVImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+CVImage.mm"; sourceTree = "<group>"; };
-		2119BCCD1A12770700659717 /* bEyxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bEyxy.png; sourceTree = "<group>"; };
 		2119BCCE1A12770700659717 /* Butterfly_pepper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Butterfly_pepper.png; sourceTree = "<group>"; };
-		2119BCCF1A12770700659717 /* lena_noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena_noise.png; sourceTree = "<group>"; };
 		2119BCD01A12770700659717 /* lena_std.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena_std.png; sourceTree = "<group>"; };
 		2119BCD51A127E4F00659717 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
 		2119BCD71A12854900659717 /* houghTrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houghTrans.png; sourceTree = "<group>"; };
@@ -172,6 +169,7 @@
 		212694221A1F92B7003760D5 /* TransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformController.h; sourceTree = "<group>"; };
 		212694231A1F92B7003760D5 /* TransformController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransformController.mm; sourceTree = "<group>"; };
 		212694241A1F92B7003760D5 /* TransformController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformController.xib; sourceTree = "<group>"; };
+		2175408B1A20E832004D7283 /* lena_bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena_bad.png; sourceTree = "<group>"; };
 		2199593819E4073E0058399E /* KRImageProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = KRImageProcess.app; path = "影像處理作業.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2199593C19E4073E0058399E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2199593D19E4073E0058399E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -315,12 +313,11 @@
 		2119BCCC1A12770700659717 /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
+				2175408B1A20E832004D7283 /* lena_bad.png */,
 				2126940C1A1F8B75003760D5 /* Homework_5 */,
 				2119BCD71A12854900659717 /* houghTrans.png */,
 				2119BCD51A127E4F00659717 /* face.png */,
-				2119BCCD1A12770700659717 /* bEyxy.png */,
 				2119BCCE1A12770700659717 /* Butterfly_pepper.png */,
-				2119BCCF1A12770700659717 /* lena_noise.png */,
 				2119BCD01A12770700659717 /* lena_std.png */,
 			);
 			path = Resouce;
@@ -471,7 +468,7 @@
 				2126941A1A1F8B75003760D5 /* image_02_two.jpg in Resources */,
 				2126941C1A1F8B75003760D5 /* image_03_two.jpg in Resources */,
 				2119BCD81A12854900659717 /* houghTrans.png in Resources */,
-				2119BCD31A12770700659717 /* lena_noise.png in Resources */,
+				2175408C1A20E832004D7283 /* lena_bad.png in Resources */,
 				2199597019E40F2A0058399E /* MainController.xib in Resources */,
 				212694201A1F8B75003760D5 /* image_05_two.jpg in Resources */,
 				2126941D1A1F8B75003760D5 /* image_04_one.jpg in Resources */,
@@ -479,7 +476,6 @@
 				2119BCD61A127E4F00659717 /* face.png in Resources */,
 				2126941F1A1F8B75003760D5 /* image_05_one.jpg in Resources */,
 				2119BCD41A12770700659717 /* lena_std.png in Resources */,
-				2119BCD11A12770700659717 /* bEyxy.png in Resources */,
 				2126941B1A1F8B75003760D5 /* image_03_one.jpg in Resources */,
 				2119BCD21A12770700659717 /* Butterfly_pepper.png in Resources */,
 				2199594319E4073E0058399E /* Images.xcassets in Resources */,

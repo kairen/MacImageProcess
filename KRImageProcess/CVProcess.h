@@ -12,12 +12,14 @@
 
 using namespace cv;
 
+
 @interface CVProcess : NSObject
 
 +(NSBitmapImageRep*) cvimage:(Mat)image GaussianFilter:(int)blur;
 +(NSBitmapImageRep*) cvimage:(Mat)image BilateralFilter:(int)blur;
 +(NSBitmapImageRep*) cvimageMedianFilter:(Mat)image;
 
++(NSBitmapImageRep*) cvimage:(Mat)src_img warpPerspective:(BOOL)restore;
 +(void) skinColorDetection:(IplImage*)image;
 +(void) houghTransform:(IplImage*)image efImage:(IplImage *)effect;
 +(void) rgbToYCbCr:(IplImage *) image;

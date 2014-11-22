@@ -25,6 +25,8 @@
 -(IBAction) cvImageBGRtoYCrCb:(id)sender;
 -(IBAction) detectionSkinColor:(id)sender;
 -(IBAction) houghTransformAction:(id)sender;
+-(IBAction) warpPerspectiveAction:(id)sender;
+
 
 -(IBAction) aboutAction:(id)sender;
 -(IBAction) selectImage:(id)sender;

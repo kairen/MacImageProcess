@@ -8,11 +8,44 @@
 
 #import "CVProcess.h"
 
-int avg_cb = 112;//YCbCr顏色空間膚色cb的平均值
-int avg_cr = 120;//YCbCr顏色空間膚色cr的平均值
-int skinRange = 23;//YCbCr顏色空間膚色的範圍
+const int avg_cb = 112;//YCbCr顏色空間膚色cb的平均值
+const int avg_cr = 120;//YCbCr顏色空間膚色cr的平均值
+const int skinRange = 23;//YCbCr顏色空間膚色的範圍
+const int nOffset=200;
 
 @implementation CVProcess
+
++(NSBitmapImageRep*) cvimage:(cv::Mat)src_img warpPerspective:(BOOL)restore {
+    
+    cv::Point2f pts1[] = {cv::Point2f(0,0),cv::Point2f(0,src_img.rows),cv::Point2f(src_img.cols,src_img.rows),cv::Point2f(src_img.cols,0)};
+    cv::Point2f pts2[] = {cv::Point2f(0,0),cv::Point2f(0+nOffset,src_img.rows),cv::Point2f(src_img.cols-nOffset,src_img.rows),cv::Point2f(src_img.cols,0)};
+    
+    cv::Mat perspective_matrix;
+    if(restore) {
+        perspective_matrix = cv::getPerspectiveTransform(pts2, pts1);
+    } else {
+        perspective_matrix = cv::getPerspectiveTransform(pts1, pts2);
+    }
+    cv::Mat dst_img;
+    
+    cv::warpPerspective(src_img, dst_img, perspective_matrix, src_img.size(), cv::INTER_LINEAR);
+    
+    cv::line(src_img, pts1[0], pts1[1], cv::Scalar(255,255,0), 2, CV_AA);
+    cv::line(src_img, pts1[1], pts1[2], cv::Scalar(255,255,0), 2, CV_AA);
+    cv::line(src_img, pts1[2], pts1[3], cv::Scalar(255,255,0), 2, CV_AA);
+    cv::line(src_img, pts1[3], pts1[0], cv::Scalar(255,255,0), 2, CV_AA);
+    cv::line(src_img, pts2[0], pts2[1], cv::Scalar(255,0,255), 2, CV_AA);
+    cv::line(src_img, pts2[1], pts2[2], cv::Scalar(255,0,255), 2, CV_AA);
+    cv::line(src_img, pts2[2], pts2[3], cv::Scalar(255,0,255), 2, CV_AA);
+    cv::line(src_img, pts2[3], pts2[0], cv::Scalar(255,0,255), 2, CV_AA);
+    
+    Mat dispImage;
+    
+    cvtColor(dst_img, dispImage, CV_BGR2RGB);
+    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:&dispImage.data pixelsWide:dispImage.cols pixelsHigh:dispImage.rows bitsPerSample:8 samplesPerPixel:3 hasAlpha:NO isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bytesPerRow:dispImage.step bitsPerPixel:0];
+    dispImage.release();
+    return bitmapRep;
+}
 
 +(void) houghTransform:(IplImage*)image efImage:(IplImage *)effect {
     IplImage *pDstImg = cvCreateImage( cvGetSize(image), 8, 1 );

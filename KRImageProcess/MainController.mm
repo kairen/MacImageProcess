@@ -23,7 +23,7 @@ using namespace cv;
 
 -(void) windowDidLoad {
     [super windowDidLoad];
-    self.images = @[@"lena_std.png",@"Butterfly_pepper.png",@"bEyxy.png",
+    self.images = @[@"lena_std.png",@"lena_bad.png",@"Butterfly_pepper.png",
                     @"face.png",@"houghTrans.png"];
     [self.popUpButton addItemsWithTitles:self.images];
     self.sourceImage.image = [NSImage imageNamed:self.images[0]];
@@ -36,6 +36,16 @@ using namespace cv;
 
 - (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
     
+}
+
+-(IBAction) warpPerspectiveAction:(id)sender {
+    NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:[self.sourceImage.image TIFFRepresentation]];
+    NSSize size = NSMakeSize(imageRep.pixelsWide,
+                             imageRep.pixelsHigh);
+    Mat src = imread([self imagePath:self.sourceImage.image.name]);
+    NSBitmapImageRep *bitmapImageRep = [CVProcess cvimage:src warpPerspective:((NSButton*)sender).tag];
+    [self showProcessImage:bitmapImageRep size:size];
+    [self saveImage:bitmapImageRep];
 }
 
 -(IBAction) houghTransformAction:(id)sender {
@@ -75,9 +85,11 @@ using namespace cv;
 }
 
 -(IBAction)resizeAction:(id)sender {
+    
     NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:[self.sourceImage.image TIFFRepresentation]];
     NSSize newSize = NSMakeSize([self.widthField.stringValue intValue],
                                 [self.heightField.stringValue intValue]);
+    if(newSize.width != newSize.height) return;
     
     NSBitmapImageRep *bitmapImageRep = [imageRep bitmapImageResize:newSize];
     [self showProcessImage:bitmapImageRep size:newSize];

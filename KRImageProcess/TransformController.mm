@@ -64,9 +64,11 @@
     line(sourceImage, pts2[2], pts2[3], cv::Scalar(255,0,255), 2, CV_AA);
     line(sourceImage, pts2[3], pts2[0], cv::Scalar(255,0,255), 2, CV_AA);
 
-    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:&dispImage.data pixelsWide:dispImage.cols pixelsHigh:dispImage.rows bitsPerSample:8 samplesPerPixel:3 hasAlpha:NO isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bytesPerRow:dispImage.step bitsPerPixel:0];
+    Mat disp_Image;
+    cvtColor(dispImage, disp_Image, CV_BGR2RGB);
+    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:&disp_Image.data pixelsWide:disp_Image.cols pixelsHigh:disp_Image.rows bitsPerSample:8 samplesPerPixel:3 hasAlpha:NO isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bytesPerRow:disp_Image.step bitsPerPixel:0];
     dispImage.release();
-    
+    disp_Image.release();
     [self showProcessImage:bitmapRep size:size];
 }
 

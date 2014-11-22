@@ -177,6 +177,26 @@
                         <rect key="frame" x="14" y="121" width="256" height="256"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="t2E-Mv-g4v"/>
                     </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZE-WI-o1N">
+                        <rect key="frame" x="425" y="12" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="變換" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LEg-IK-r6I">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="warpPerspectiveAction:" target="-2" id="hGK-6s-pYr"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="XNx-TZ-eC9">
+                        <rect key="frame" x="348" y="12" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="還原" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="n5s-oL-xFN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiTC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="warpPerspectiveAction:" target="-2" id="fpW-Go-qhk"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>
